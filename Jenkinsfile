@@ -1,10 +1,5 @@
 pipeline {
-  environment {
-    registry = "dlfarande/devops_pipeline_jenkins"
-    registryCredential = 'dockerhubcredentials'
-    dockerImage = ''
-  }
-  agent any
+    agent any
   stages {
     stage('Checkout') {
       steps {
