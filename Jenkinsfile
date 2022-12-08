@@ -8,10 +8,9 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git credentialsId: 'githubcredentials', url: 'https://https://github.com/dlfarande/jenkins_pipelines.git'
+        git credentialsId: 'githubcredentials', url: 'https://github.com/dlfarande/jenkins_pipelines/edit/main/Jenkinsfile.git'
       }
     }
-  }
     stage('Docker Build') {
       steps{
         script {
