@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git credentialsId: 'githubcredentials', url: 'https://github.com.git'
+        git credentialsId: 'githubcredentials', url: 'https://github.com'
       }
     }
     stage('Docker Build') {
