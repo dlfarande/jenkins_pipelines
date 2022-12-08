@@ -11,6 +11,7 @@ pipeline {
         git credentialsId: 'githubcredentials', url: 'https://https://github.com/dlfarande/jenkins_pipelines.git'
       }
     }
+  }
     stage('Docker Build') {
       steps{
         script {
