@@ -1,6 +1,5 @@
 pipeline {
-  agent any
-  environment {
+    environment {
     registry = "dlfarande/devops_pipeline_jenkins"
     registryCredential = 'dockerhubcredentials'
     dockerImage = ''
